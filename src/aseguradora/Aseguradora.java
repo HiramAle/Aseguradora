@@ -16,6 +16,8 @@ public class Aseguradora {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        //Prueba para saber si hago bien lo del Github
     }
     
 }
