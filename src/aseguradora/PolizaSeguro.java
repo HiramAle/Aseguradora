@@ -38,7 +38,7 @@ public class PolizaSeguro extends Cobertura implements PrimaSeguro  {
     }
 
     public void setEmision(int year, int month, int date) {
-        this.emision.set(year, month, date);
+        this.emision.set(year, month-1, date);
     }
 
     public Calendar getInicioVigencia() {
@@ -46,7 +46,7 @@ public class PolizaSeguro extends Cobertura implements PrimaSeguro  {
     }
 
     public void setInicioVigencia(int year, int month, int date) {
-        this.inicioVigencia.set(year, month, date);
+        this.inicioVigencia.set(year, month-1, date);
     }
 
     public Calendar getFinVigencia() {
@@ -54,7 +54,7 @@ public class PolizaSeguro extends Cobertura implements PrimaSeguro  {
     }
 
     public void setFinVigencia(int year, int month, int date) {
-        this.finVigencia.set(year, month, date);
+        this.finVigencia.set(year, month-1, date);
     }
 
     public String getTipoPago() {
@@ -82,9 +82,5 @@ public class PolizaSeguro extends Cobertura implements PrimaSeguro  {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    // implementa metodo abstracto de la clase cobertura 
-    @Override
-    public double calculaCostoCoverturas() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }

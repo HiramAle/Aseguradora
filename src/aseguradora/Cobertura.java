@@ -74,7 +74,104 @@ public abstract class Cobertura implements CostoCoberturas{
     
     //indica las coberturas a incluir 
     public void incluirCoberturas (){
+        
+        Scanner entrada = new Scanner(System.in);  
+        String opc;
+        System.out.println("-------- Coberturas ----------");
+        
+        System.out.println("¿Desea inclir daños materiales? si/no");
+        opc = entrada.nextLine();
+        if (opc.toLowerCase().equals("si")){
+            this.setDañosMat(true);
+        }else if (opc.toLowerCase().equals("no")){
+            this.setDañosMat(false);
+        }else{
+            System.out.println("Opcion no reconocida, intentelo de nuevo");
+            incluirCoberturas();
+        }
+        
+        System.out.println("¿Desea inclir robos? si/no");
+        opc = entrada.nextLine();
+        if (opc.toLowerCase().equals("si")){
+            this.setRobo(true);
+        }else if (opc.toLowerCase().equals("no")){
+            this.setRobo(false);
+        }else{
+            System.out.println("Opcion no reconocida, intentelo de nuevo");
+            incluirCoberturas();
+        }
+        
+       
+        System.out.println("¿Desea inclir asistencia en el viaje? si/no");
+        opc = entrada.nextLine();
+        if (opc.toLowerCase().equals("si")){
+            this.setAsistencia(true);
+        }else if (opc.toLowerCase().equals("no")){
+            this.setAsistencia(false);
+        }else{
+            System.out.println("Opcion no reconocida, intentelo de nuevo");
+            incluirCoberturas();
+        }
+        
+        System.out.println("¿Desea inclir defensa legal? si/no");
+        opc = entrada.nextLine();
+        if (opc.toLowerCase().equals("si")){
+            this.setDefensa(true);
+        }else if (opc.toLowerCase().equals("no")){
+            this.setDefensa(false);
+        }else{
+            System.out.println("Opcion no reconocida, intentelo de nuevo");
+            incluirCoberturas();
+        }
+        
+        System.out.println("¿Desea inclir auto de repuesto? si/no");
+        opc = entrada.nextLine();
+        if (opc.toLowerCase().equals("si")){
+            this.setSustitucion(true);
+        }else if (opc.toLowerCase().equals("no")){
+            this.setSustitucion(false);
+        }else{
+            System.out.println("Opcion no reconocida, intentelo de nuevo");
+            incluirCoberturas();
+        }
+        
+        System.out.println("¿Desea inclir roturas de parabrisas y lunas? si/no");
+        opc = entrada.nextLine();
+        if (opc.toLowerCase().equals("si")){
+            this.setRotura(true);
+        }else if (opc.toLowerCase().equals("no")){
+            this.setRotura(false);
+        }else{
+            System.out.println("Opcion no reconocida, intentelo de nuevo");
+            incluirCoberturas();
+        }
+                        
+        
     }
     
-    public abstract double calculaCostoCoverturas();
+    
+    public double calculaCostoCoberturas(){
+        double cobertura = 0.0;
+        
+        if (this.isDañosMat()){
+            cobertura += CostoCoberturas.dañosMateriales;
+        }
+        if (this.isRobo()){
+            cobertura += CostoCoberturas.roboTotal;
+        }
+        if (this.isAsistencia()){
+            cobertura += CostoCoberturas.servicioAsistencia;
+        }
+        if (this.isDefensa()){
+            cobertura += CostoCoberturas.defensaLegal;
+        }
+        if (this.isSustitucion()){
+            cobertura += CostoCoberturas.sustitucionVehiculo;
+        }
+        if (this.isRotura()){
+            cobertura += CostoCoberturas.rotura;
+        }
+        
+        return cobertura;
+    }
 }
