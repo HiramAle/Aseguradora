@@ -1,8 +1,10 @@
 package aseguradora;
 
+import java.util.Scanner;
+
 public abstract class Transporte {
-    
-    protected String marca,modelo,motor,serie,placas,tipo_uso,color;
+
+    protected String marca, modelo, motor, serie, placas, tipo_uso, color;
     protected double valor_factura;
 
     public Transporte() {
@@ -71,7 +73,61 @@ public abstract class Transporte {
     public void setValor_factura(double valor_factura) {
         this.valor_factura = valor_factura;
     }
-    
-    
-    
+
+    public void corregirDatos() {
+        Scanner scan = new Scanner(System.in);
+        String opc = "0";
+        while (opc != "S") {
+            System.out.println("¿Qué dato desea corregir?");
+            System.out.println("1. Marca ");
+            System.out.println("2. Modelo");
+            System.out.println("3. Motor");
+            System.out.println("4. Serie");
+            System.out.println("5. Placas");
+            System.out.println("6. Tipo de uso");
+            System.out.println("7. Valor de factura");
+            System.out.println("8. Color");
+            System.out.println("Presione S para salir");
+            opc = scan.nextLine();
+            switch (opc) {
+                case "1":
+                    System.out.println("Ingrese la nueva marca:");
+                    setMarca(scan.nextLine());
+                    break;
+                case "2":
+                    System.out.println("Ingrese el nuevo modelo:");
+                    setModelo(scan.nextLine());
+                    break;
+                case "3":
+                    System.out.println("Ingrese el nuevo motor:");
+                    setMotor(scan.nextLine());
+                    break;
+                case "4":
+                    System.out.println("Ingrese la nueva serie:");
+                    setSerie(scan.nextLine());
+                    break;
+                case "5":
+                    System.out.println("Ingrese las nuevas placas:");
+                    setPlacas(scan.nextLine());
+                    break;
+                case "6":
+                    System.out.println("Ingrese el nuevo tipo de uso:");
+                    setTipo_uso(scan.nextLine());
+                    break;
+                case "7":
+                    System.out.println("Ingrese el nuevo valor de factura:");
+                    setValor_factura(scan.nextDouble());
+                    break;
+                case "8":
+                    System.out.println("Ingrese el nuevo color:");
+                    setColor(scan.nextLine());
+                    break;
+                default:
+                    System.out.println("Ingrese una opción válida");
+            }
+
+        }
+
+    }
+
 }
