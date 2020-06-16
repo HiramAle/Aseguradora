@@ -16,11 +16,11 @@ public class Aseguradora {
         Transporte t4 = new Automovil("Toyota", "2019", "M248", "LDPJ2648", "PDEN46", "privado", "blanco", 15000.00, aseg4);
         Transporte t5 = new Motocicleta("Yamaha", "2020", "M155", "OJFG1379", "PLOI12", "privado", "negro", 15000.00, aseg5);
 
-        PolizaSeguro poliza1 = new PolizaSeguro(true, true, false, true, false, false, 12785, 15, 5, 2022, 15, 5, 2025, "efectivo", t1);
-        PolizaSeguro poliza2 = new PolizaSeguro(false, true, false, false, true, false, 12785, 15, 5, 2022, 15, 5, 2025, "tarjeta", t2);
-        PolizaSeguro poliza3 = new PolizaSeguro(true, true, false, false, true, false, 16495, 20, 2, 2022, 20, 2, 2025, "efectivo", t3);
+        PolizaSeguro poliza1 = new PolizaSeguro(true, true, false, true, false, false, 12785, 15, 05, 2022, 15, 05, 2025, "efectivo", t1);
+        PolizaSeguro poliza2 = new PolizaSeguro(false, true, false, false, true, false, 12785, 15, 05, 2022, 15, 05, 2025, "tarjeta", t2);
+        PolizaSeguro poliza3 = new PolizaSeguro(true, true, false, false, true, false, 16495, 20, 02, 2022, 20, 02, 2025, "efectivo", t3);
         PolizaSeguro poliza4 = new PolizaSeguro(false, false, false, true, true, false, 62348, 12, 10, 2022, 12, 10, 2025, "efectivo", t4);
-        PolizaSeguro poliza5 = new PolizaSeguro(false, false, false, false, true, true, 48652, 4, 6, 2022, 4, 6, 2025, "tarjeta", t5);
+        PolizaSeguro poliza5 = new PolizaSeguro(false, false, false, false, true, true, 48652, 4, 06, 2022, 4, 06, 2025, "tarjeta", t5);
 
         double prima = poliza2.calcularMontoPrima();
         System.out.println(prima);
