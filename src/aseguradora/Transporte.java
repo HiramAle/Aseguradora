@@ -6,10 +6,23 @@ public abstract class Transporte {
 
     protected String marca, modelo, motor, serie, placas, tipo_uso, color;
     protected double valor_factura;
+    protected Asegurado aseg;
 
     public Transporte() {
     }
 
+    public Transporte(String marca, String modelo, String motor, String serie, String placas, String tipo_uso, String color, double valor_factura, Asegurado aseg) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.motor = motor;
+        this.serie = serie;
+        this.placas = placas;
+        this.tipo_uso = tipo_uso.toLowerCase();
+        this.color = color;
+        this.valor_factura = valor_factura;
+        this.aseg = aseg;
+    }
+    
     public String getMarca() {
         return marca;
     }
@@ -73,6 +86,16 @@ public abstract class Transporte {
     public void setValor_factura(double valor_factura) {
         this.valor_factura = valor_factura;
     }
+
+    public Asegurado getAseg() {
+        return aseg;
+    }
+
+    public void setAseg(Asegurado aseg) {
+        this.aseg = aseg;
+    }
+    
+    
 
     public void corregirDatos() {
         Scanner scan = new Scanner(System.in);

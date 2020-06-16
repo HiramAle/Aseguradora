@@ -12,13 +12,21 @@ import java.util.Scanner;
  * @author Ale
  */
 public abstract class Cobertura implements CostoCoberturas{
-    private boolean dañosMat;
-    private boolean robo;
-    private boolean asistencia;
-    private boolean defensa;
-    private boolean sustitucion;
-    private boolean rotura;
+    protected boolean dañosMat;
+    protected boolean robo;
+    protected boolean asistencia;
+    protected boolean defensa;
+    protected boolean sustitucion;
+    protected boolean rotura;
 
+    public Cobertura(boolean dañosMat, boolean robo, boolean asistencia, boolean defensa, boolean sustitucion, boolean rotura) {
+        this.dañosMat = dañosMat;
+        this.robo = robo;
+        this.asistencia = asistencia;
+        this.defensa = defensa;
+        this.sustitucion = sustitucion;
+        this.rotura = rotura;
+    } 
     //inician getters y setters 
     public boolean isDañosMat() {
         return dañosMat;
