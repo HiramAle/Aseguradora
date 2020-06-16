@@ -1,0 +1,29 @@
+-------------Datos del Asegurado ------------- 	 ------------------Poliza------------------
+ 
+Nombre: Juan Mata Herrera		 | Numero de Poliza: 12785
+Direccion: calle 167				 | Fecha de Emision: 15/27/2020
+Fecha de Nacimiento: 10/27/1999			 | Desde: 11/27/0020
+Emision de Licencia: 12/27/2016			 | Hasta: 14/27/0020
+ 
+-------------Ddatos de vehiculo ------------- 	 -----------Informacion del Pago -----------
+ 
+Marca: Seat	 Placas: MGKLY89		 | Tipo de Pago: tarjeta
+Modelo: 2018	 Numero de serie: FJGK1284	 | Moneda: Pesos Mexicanos
+Color: rojo	 Tipo de uso: privado		 |
+Motor: M124					 |
+ 
+---------------------------------------------------------------------------------------------
+ 
+Costo Base: 			 $9000.0
+ 				 $900.0		 Cargo extra por edad del conductor
+Coberturas:
+Daños Materiales: 	 	 No Aplica 	 Propios e Incendio
+Robo Total: 	 	 	 $2000.0
+Asistencia en el viaje: 	 No Aplica
+Defensa Legal: 	 	  	 No Aplica
+Auto de Repuesto: 	 	 $500.0
+Roturas: 			 No Aplica 	 Parabrisas y lunas
+Subtotal: 			 $12400.0
+				 $248.0		 Cargo extra por pago con tarjeta
+
+TOTAL: 				 $12648.0

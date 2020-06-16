@@ -7,6 +7,10 @@ public class Camion extends Transporte{
 
     public Camion() {
     }
+    
+     public Camion(String marca, String modelo, String motor, String serie, String placas, String tipo_uso, String color, double valor_factura, Asegurado aseg) {
+        super(marca, modelo, motor, serie, placas, tipo_uso, color, valor_factura, aseg);
+    }
 
     public int getCapacidadCarga() {
         return capacidadCarga;
