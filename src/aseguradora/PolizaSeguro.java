@@ -33,7 +33,7 @@ public class PolizaSeguro extends Cobertura implements PrimaSeguro  {
     }
 
     public PolizaSeguro(boolean dañosMat, boolean robo, boolean asistencia,boolean defensa, boolean sustitucion, boolean rotura,
-            int numero,int anioV,int mesV, int diaV, int anioF,int mesF, int diaF , String tipoPago, Transporte transport) {
+            int numero,int diaV,int mesV, int anioV, int diaF,int mesF, int anioF , String tipoPago, Transporte transport) {
         
         super(dañosMat,robo,asistencia,defensa,sustitucion,rotura);
         this.numero = numero;
@@ -203,7 +203,7 @@ public class PolizaSeguro extends Cobertura implements PrimaSeguro  {
     
     public void imprimirPoliza(Transporte trans,double subtotal, double comi, double total) throws IOException{
         
-        SimpleDateFormat formato = new SimpleDateFormat("dd'/'mm'/'yyyy");
+        SimpleDateFormat formato = new SimpleDateFormat("dd'/'MM'/'yyyy");
         try {
             output = new FileWriter("Poliza.txt");
             output.write("-------------Datos del Asegurado ------------- \t ------------------Poliza------------------");

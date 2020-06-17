@@ -1,29 +1,28 @@
 -------------Datos del Asegurado ------------- 	 ------------------Poliza------------------
  
-Nombre: Juan Mata Herrera		 | Numero de Poliza: 12785
-Direccion: calle 167				 | Fecha de Emision: 15/27/2020
-Fecha de Nacimiento: 10/27/1999			 | Desde: 11/27/0020
-Emision de Licencia: 12/27/2016			 | Hasta: 14/27/0020
+Nombre: Armando Rosales Torres		 | Numero de Poliza: 62348
+Direccion: La Basilica 200				 | Fecha de Emision: 16/06/2020
+Fecha de Nacimiento: 11/05/1997			 | Desde: 12/10/2022
+Emision de Licencia: 22/01/2019			 | Hasta: 12/10/2025
  
 -------------Ddatos de vehiculo ------------- 	 -----------Informacion del Pago -----------
  
-Marca: Seat	 Placas: MGKLY89		 | Tipo de Pago: tarjeta
-Modelo: 2018	 Numero de serie: FJGK1284	 | Moneda: Pesos Mexicanos
-Color: rojo	 Tipo de uso: privado		 |
-Motor: M124					 |
+Marca: Toyota	 Placas: PDEN466		 | Tipo de Pago: efectivo
+Modelo: 2019	 Numero de serie: LDPJ2648	 | Moneda: Pesos Mexicanos
+Color: blanco	 Tipo de uso: privado		 |
+Motor: M248					 |
  
 ---------------------------------------------------------------------------------------------
  
-Costo Base: 			 $9000.0
- 				 $900.0		 Cargo extra por edad del conductor
+Costo Base: 			 $6500.0
+ 				 $650.0		 Cargo extra por edad del conductor
+ 				 $1000.0 	 Cargo extra por Antigüedad de la Licencia
 Coberturas:
 Daños Materiales: 	 	 No Aplica 	 Propios e Incendio
-Robo Total: 	 	 	 $2000.0
+Robo Total: 	 	 	 No Aplica
 Asistencia en el viaje: 	 No Aplica
-Defensa Legal: 	 	  	 No Aplica
+Defensa Legal: 	 	 	 $700.0
 Auto de Repuesto: 	 	 $500.0
 Roturas: 			 No Aplica 	 Parabrisas y lunas
-Subtotal: 			 $12400.0
-				 $248.0		 Cargo extra por pago con tarjeta
 
-TOTAL: 				 $12648.0
+TOTAL: 				 $9350.0
